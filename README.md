@@ -44,7 +44,7 @@ Extract related data from zip file and from each CT and put them into our datase
 
 **Link to the code and Extracted Dataset**
 
-https://drive.google.com/drive/folders/1vYDlBc4Dr3VZAjPPLZaI8rdMRFGata0T
+https://drive.google.com/drive/folders/1ghaSfbgYYe3Parhx1omvSUqwJAOidRM9?usp=sharing
 
 ### Initial proposed solution
 
