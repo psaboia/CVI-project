@@ -65,7 +65,7 @@ One of the recent publications by Reichman et al., (2020) proposed a deep learni
 We want to locate nodules first, and then create a model that can distinguish between pristine and generated nodules.
 
 ### Access links to this project(dataset, code, etc)
-https://drive.google.com/drive/folders/1vYDlBc4Dr3VZAjPPLZaI8rdMRFGata0T
+https://drive.google.com/drive/folders/1ghaSfbgYYe3Parhx1omvSUqwJAOidRM9?usp=sharing
 
 
 ### References
