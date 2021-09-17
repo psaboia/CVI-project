@@ -30,7 +30,7 @@ Provided with the scans there is a table with the ground truth. For each scan, w
 
 
            Table 1. Data Specification of Blind and Open Trials 
-|------------------------------------------------------------------------|
+|                                                                        |
 | Dataset       |No. Scans | No. Annotated Scans | No. Manipulated Scans |
 | -------       |--------- | ------------------- | --------------------- |
 | Blind Trial   |   1745   |        133          |          95           |
@@ -47,10 +47,10 @@ At first, we extracted relevant data from the zip file and each CT folders, then
 Table 2. Dataset Description
 
 
-|File Type |Method of Tampering|Total      |Pristine       |Tampered   |
------------------------------------------------------------------------
-|DICOM     |CT-GAN Algorithm   |   460     |   349         | 111       |
------------------------------------------------------------------------
+|File Type |Method of Tampering|Total|Pristine |Tampered |
+|--------- |-------------------|-----|---------|-------- |
+|DICOM     |CT-GAN Algorithm   | 460 | 349     | 111     |
+|-----     |----------------   | --- | ---     | ---     |
 
 
 Our goal is to distinguish between tempered and untempered photos, so we grouped all tampered classes (FB, FM) into tampered nodules, and other classes (TM and TB) into authentic nodules. As a result, we shall only deal with two classes
