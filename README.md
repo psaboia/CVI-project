@@ -63,12 +63,7 @@ One of the recent publications by Reichman et al., (2020) proposed a deep learni
 
 
 ### Initial proposed solution
-First, we will detect the nodules for then propose a model to classify whether a nodule is pristine or forged.
-
 We want to locate nodules first, and then create a model that can distinguish between pristine and generated nodules.
-Access links to this project(dataset, code, etc)
-https://drive.google.com/drive/folders/1vYDlBc4Dr3VZAjPPLZaI8rdMRFGata0T
-https://github.com/psaboia/CVI-project/blob/main/README.md
 
 ### Access links to this project(dataset, code, etc)
 https://drive.google.com/drive/folders/1vYDlBc4Dr3VZAjPPLZaI8rdMRFGata0T
