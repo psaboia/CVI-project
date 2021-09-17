@@ -45,9 +45,9 @@ At first, we extracted relevant data from the zip file and each CT folders, then
 Table 2. Dataset Description
 
 
-|File Type |Method of Tampering|Total|Pristine |Tampered |
-|--------- |-------------------|-----|---------|-------- |
-|DICOM     |CT-GAN Algorithm   | 460 | 349     | 111     |
+|Tampered |Pristine|Total|File Type|Method of Tampering|
+|-------- |--------|-----|---------|-------------------|
+|111      |349     | 460 | DICOM   |CT-GAN Algorithm   |
 
 
 
