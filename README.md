@@ -50,7 +50,7 @@ Table 2. Dataset Description
 |File Type |Method of Tampering|Total|Pristine |Tampered |
 |--------- |-------------------|-----|---------|-------- |
 |DICOM     |CT-GAN Algorithm   | 460 | 349     | 111     |
-|-----     |----------------   | --- | ---     | ---     |
+
 
 
 Our goal is to distinguish between tempered and untempered photos, so we grouped all tampered classes (FB, FM) into tampered nodules, and other classes (TM and TB) into authentic nodules. As a result, we shall only deal with two classes
