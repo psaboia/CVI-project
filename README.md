@@ -13,12 +13,11 @@ _________________________________________________________________________
 
 
 ### Objective
+To distinguish between authentic and fake medical images and identify where medical scans have been tampered. 
 
-To distinguish between real and fake cancers and identify where medical scans have been tampered. Three expert radiologists have evaluated this dataset and could not reliably tell the difference between real and fake cancers, meaning that the fake cancers are realistic, and this detection task is very challenging
-Datasets and Data Acquisition
 
-### Dataset Name
-CT-GAN Data: real cancer removed and with fake cancer injected [1]
+### Datasets and Data Acquisition
+We used the CT-GAN dataset, which includes both authentic and manipulated CT images of lung cancer. Three qualified radiologists analyzed this dataset and were unable to consistently distinguish between actual and artificiale cancers, meaning that the fake cancers are realistic, and this detection task is very challenging. Author of CT-GAN also tried one of the available AI systems for lung cancer detection, but it couldn't tell the difference between false and actual nodules. [1]
 
 ### Dataset Description
 The dataset consists of two sets (80 scans and 20 scans). This dataset has two type of tampering including: 1)removing a cancer and 2)injecting a cancer
