@@ -54,7 +54,7 @@ Table 2. Dataset Description
 
 
 
-Our goal is to distinguish between tempered and untempered photos, so we grouped all tampered classes (FB, FM) into tampered nodules, and other classes (TM and TB) into authentic nodules. As a result, we shall only deal with two classes
+Our goal is to distinguish between tempered and untempered photos, so we grouped all tampered classes (FB, FM) into tampered nodules(T), and other classes (TM and TB) into pristine nodules(P). As a result, we shall only deal with two classes
 
 ### Preprocessing
 ** Data Transformation: converting 16 bit int DICOM data into 8 bit data to be suitable for processing by using one of the deep learning techniques.
