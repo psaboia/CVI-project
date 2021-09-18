@@ -42,7 +42,7 @@ Provided with the scans there is a table with the ground truth. For each scan, w
 ### Data Preparation
 At first, we extracted relevant data from the zip file and each CT folders, then combined them into our dataset. We added previous and next DICOM pictures associated with each patient's CT slide to expand the size of our collection. Also, there were some similar CT images with different classes at the same location that we had to remove from our final dataset. Table 2 shows the details of our dataset after cleaning and adding more data. 
 
-We devided out dataset to train, validation, and test as well which can be find here "
+We devided out dataset to train(60% of the data), validation(20% of the data), and test(20% of the data) as well which can be find here "
 https://drive.google.com/drive/folders/1ghaSfbgYYe3Parhx1omvSUqwJAOidRM9?usp=sharing "
 
 Table 2. Dataset Description
