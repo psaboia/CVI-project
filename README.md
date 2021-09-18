@@ -70,6 +70,8 @@ https://drive.google.com/drive/folders/1ghaSfbgYYe3Parhx1omvSUqwJAOidRM9?usp=sha
 
 ### References
 [1] Mirsky, Y., Mahler, T., Shelef, I., & Elovici, Y. (2019). CT-GAN: Malicious tampering of 3D medical imagery using deep learning. In 28th {USENIX} Security Symposium ({USENIX} Security 19) (pp. 461-478).
+
 [2] https://www.kaggle.com/ymirsky/medical-deepfakes-lung-cancer
+
 [3] Reichman, B., Jing, L., Akin, O., & Tian, Y. (2020, December). Medical Image Tampering Detection: A New Dataset and Baseline. In International Workshop on Artificial Intelligence for Healthcare Applications (AIHA), 2020.
 
