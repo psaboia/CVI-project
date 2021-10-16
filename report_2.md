@@ -94,6 +94,11 @@ Figure 4 shows an example of a removed nodule, its mask along with a bounding bo
 
 <img src="IMG-0226.jpeg" width="700">    
 
+## Input Features and Code:
+
+- [XML files for SSD](https://drive.google.com/drive/folders/1jaqLmqfyVZ0A8knQ7LcAygSAcAfLHNvJ?usp=sharing)
+- [Scripts used in data preparation](data_preparation)
+
   
 ### References
 [1] Mirsky, Y., Mahler, T., Shelef, I., & Elovici, Y. (2019). CT-GAN: Malicious tampering of 3D medical imagery using deep learning. In 28th {USENIX} Security Symposium ({USENIX} Security 19) (pp. 461-478).
