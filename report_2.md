@@ -22,12 +22,12 @@ A recently work have provide a huge dataset of tamperd images of lung screening 
 *classical inpainting*, *and deep inpainting*. For the last one, they used the CTGAN for removing and adding nodules from/to the original CT scans in the original LIDC-IDRI dataset[1].
 The LuNoTim-CT dataset contains 7, 202 total tampered lung CT scans (512*512) with 356,217 slices by different tampering methods (Figure 1).
   
-![picture alt](./LuNoTim.png "")
+![picture alt](./figs/LuNoTim.png "")
                         
 Deep inpainting method is based on the CT-GAN algorithm. In total, 891 CT scans are used to add nodules which include 124, 495 slices and 
 758 CT scans were used to add nodules which include 77, 898 slices (Table 1).
 
-![picture alt](./table.png "")
+![picture alt](./figs/table.png "")
 
 For each tampered slice, only one tampering method is used at once while the same CT scan can be tampered by different tampering methods at different times. 
 On average about 50 slices are tampered per CT scan
@@ -62,11 +62,11 @@ The LuNoTim dataset only contains tampered data and some masks for pristine CT s
 
 ### Pristine images  
 For pristine images, we decided to use only CT scan slices which present nodules that are classified as cancer by the specialists.
-<img src="pristine.png" width="300">  
+<img src="./figs/pristine.png" width="300">  
 
 As the nodule can appear in the slices around the slices labeled having nodules, we take more than one slice for the same nodule as different samples.
 See Figure bellow.   
-<img src="pristine_consec.png" width="650"> 
+<img src="./figs/pristine_consec.png" width="650"> 
   
 
 ### Tampered images
@@ -82,7 +82,7 @@ Figure 2 shows a sample of generated XML file for a tampered CT slice in which t
 The SSD algorithm needs one XML file for each of the tampered and pristine slices. 
 In total, for tampered nodules we generated 202,393 XML files and for pristine nodules we could select 3,573 samples.
   
-![picture alt](./xml_example.png "")
+![picture alt](./figs/xml_example.png "")
  
 Nodule masks provided for added nodules in LuNOTIM-CT include some artifacts around the tampered area. 
 Therefore, to prepare the input data for the SSD model we applied a morphological operator(dilation) 
@@ -92,12 +92,12 @@ For removed nodules, a perfect mask was provided inside of the dataset, so we on
 Figure 4 shows an example of a removed nodule, its mask along with a bounding box around it in the CT slice.
 
 
-<img src="IMG-0226.jpeg" width="700">    
+<img src="./figs/IMG-0226.jpeg" width="700">    
 
 ## Input Features and Code:
 
 - [XML files for SSD](https://drive.google.com/drive/folders/1jaqLmqfyVZ0A8knQ7LcAygSAcAfLHNvJ?usp=sharing)
-- [Scripts used in data preparation](data_preparation)
+- [Scripts used in data preparation](./data_preparation/)
 
   
 ### References
