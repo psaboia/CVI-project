@@ -7,7 +7,7 @@ Priscila Moreira (pmoreira@nd.edu) and Mahsa Mitcheff (mmitchef@nd.edu)
 
 _________________________________________________________________________
 
-# Report 2: Data Acquisition
+# Report 2: Data preprocessing
 
 ## Project: Medical Image Forgery  Detection
   
