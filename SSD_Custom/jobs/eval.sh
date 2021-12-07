@@ -1,7 +1,12 @@
 source activate py368-tf115-cuda10
 
+# EVAL_DIR is the place to save the output of the evaluation (tf.events)
 EVAL_DIR=/scratch365/pmoreira/lunotim_ssd/experiment1/evaluation/test/
+
+# checkpoint folder 
 CHECKPOINT_PATH=/scratch365/pmoreira/lunotim_ssd/experiment1/checkpoints/
+
+# tfrecord folder
 DATASET_DIR=/scratch365/pmoreira/datasets/lunotim/experiment1/test/tfrecords/
 
 cd ../
