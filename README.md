@@ -14,5 +14,7 @@ _________________________________________________________________________
 ### [Report 1](report_1.md)
 ### [Report 2](report_2.md)
 
-### [Final Report] (CVI_final_report.pdf)
+### [Final Report](CVI_final_report.pdf)
+### [Final Presentation](CV_presentation_final.pdf) 
+### [Short video (SSD performance)](SSD_Results.mov) 
 
