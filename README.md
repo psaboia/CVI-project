@@ -16,5 +16,5 @@ _________________________________________________________________________
 
 ### [Final Report](CVI_final_report.pdf)
 ### [Final Presentation](CV_presentation_final.pdf) 
-### [Short video on SSD performance-SSD_Results.mp4](forgery_detection_in_medical_images.mp4) 
+### [Short video on SSD performance](forgery_detection_in_medical_images.mp4) 
 
