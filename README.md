@@ -71,3 +71,9 @@ Inside the folder `./demo`, run the script `test_solution.ipynb`.
 jupyter notebook ./demo/test_solution.ipynb
 ```
 
+
+## Original Source
+
+[SSD-Tensorflow - https://github.com/balancap/SSD-Tensorflow](https://github.com/balancap/SSD-Tensorflow)  
+
+
