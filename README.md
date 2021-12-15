@@ -49,7 +49,7 @@ pip3 install matplotlib==3.3.2
 conda install jupyter
 ```
 
-## Download our repo and demo folder
+## Download our repo and demo folder inside of CVI-project
 ```
 cd CVI-project
 wget http://www.crc.nd.edu/~pmoreira/CVI-project/demo.zip
@@ -59,8 +59,8 @@ unzip demo.zip
 **Inside the demo folder you shoul see** 
  
  - `ckeckpoints/`           - folder with graph and weights of the proposed model
- - `test_sample`            - foler with some images from out testset (unseen data during the trainig)
- - `test_solution.ipynb`    - the jupyter notebook for testing the trained model in some test set images.
+ - `test_sample`            - foler with some images from our test set (unseen data during the trainig)
+ - `test_solution.ipynb`    - the jupyter notebook for testing the trained model
 
 
 ## Run the code using jupyter notebook
