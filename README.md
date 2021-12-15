@@ -1,20 +1,51 @@
-# Computer Vision I - Project
+# Computer Vision Project: Medical Image Forgery  Detection
 
 All deliverables (codes, reports) for CVI Semester Project - Fall 2021
 
 Priscila Moreira (pmoreira@nd.edu) and Mahsa Mitcheff (mmitchef@nd.edu)
 
-
-_________________________________________________________________________
-
-
-
-# Project: Medical Image Forgery  Detection
-
+# Deliverables 
 ### [Report 1](report_1.md)
 ### [Report 2](report_2.md)
 
 ### [Final Report](CVI_final_report.pdf)
 ### [Final Presentation](CV_presentation_final.pdf) 
 ### [Short video on SSD performance](forgery_detection_in_medical_images.mp4) 
+
+
+
+<a name="intructions-testSSD"></a>
+# Instructions to run our trained SSD model on test set images
+
+## Set the envirement
+**1. Create a conda environment using the following command:**
+```
+conda create -n py368-tf115-cuda10 python==3.6.8 tensorflow-gpu==1.15.0 cudatoolkit=10.0 
+```
+**2. Activate the created envirement**
+
+***Using conda 4.4:***
+```
+conda activate py368-tf115-cuda10
+```
+
+***or using conda versions older than 4.4:***
+```
+source activate py368-tf115-cuda10
+```
+
+**3. Install opencv**
+```
+conda install opencv
+```
+**4. Install matplotlib==3.3.2**
+```
+pip3 install matplotlib==3.3.2
+```
+
+## Run the code using jupyter notebook
+Inside the folder `./demo`, run the script `test_solution.ipynb`.
+```
+jupyter notebook ./demo/test_solution.ipynb
+```
 
