@@ -51,10 +51,13 @@ conda install opencv
 pip3 install matplotlib==3.3.2
 ```
 
-## Clone the repo
+## Download our repo 
+Download our repo, unzip it and download the demo folder inside it
+
 ```
-git clone https://github.com/psaboia/CVI-project.git
 cd CVI-project
+wget http://www.crc.nd.edu/~pmoreira/CVI-project/demo.zip
+unzip demo.zip
 ```
 ## Run the code using jupyter notebook
 
