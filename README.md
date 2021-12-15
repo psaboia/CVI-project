@@ -18,20 +18,27 @@ Priscila Moreira (pmoreira@nd.edu) and Mahsa Mitcheff (mmitchef@nd.edu)
 # Instructions to run our trained SSD model on test set images
 
 ## Set the envirement
+
 **1. Create a conda environment using the following command:**
+*** Using GPU***
 ```
-conda create -n py368-tf115-cuda10 python==3.6.8 tensorflow-gpu==1.15.0 cudatoolkit=10.0 
+conda create -n py368-tf115 python==3.6.8 tensorflow-gpu==1.15.0 cudatoolkit=10.0 
 ```
+*** Using CPU***
+```
+conda create -n py368-tf115 python==3.6.8 tensorflow==1.15.0  
+```
+
 **2. Activate the created envirement**
 
 ***Using conda 4.4:***
 ```
-conda activate py368-tf115-cuda10
+conda activate py368-tf115
 ```
 
 ***or using conda versions older than 4.4:***
 ```
-source activate py368-tf115-cuda10
+source activate py368-tf115
 ```
 
 **3. Install opencv**
@@ -43,6 +50,10 @@ conda install opencv
 pip3 install matplotlib==3.3.2
 ```
 
+## Clone the repo
+```
+git clone https://github.com/psaboia/CVI-project.git
+``
 ## Run the code using jupyter notebook
 Inside the folder `./demo`, run the script `test_solution.ipynb`.
 ```
