@@ -83,14 +83,18 @@ def bboxes_draw_on_img(img, classes, scores, bboxes, colors, thickness=2):
 # =========================================================================== #
 # Matplotlib show...
 # =========================================================================== #
-def plt_bboxes(img, classes, scores, bboxes, figsize=(10,10), linewidth=1.5):
+def plt_bboxes(img, classes, scores, bboxes, bbox_gt={}, figsize=(10,10), linewidth=2.0):
     """Visualize bounding boxes. Largely inspired by SSD-MXNET!
     """
+    color_id1='#13EAC9'
     fig = plt.figure(figsize=figsize)
+    plt.axis('off')
     plt.imshow(img)
     height = img.shape[0]
     width = img.shape[1]
     colors = dict()
+    
+    
     for i in range(classes.shape[0]):
         cls_id = int(classes[i])
         if cls_id >= 0:
@@ -103,12 +107,42 @@ def plt_bboxes(img, classes, scores, bboxes, figsize=(10,10), linewidth=1.5):
             xmax = int(bboxes[i, 3] * width)
             rect = plt.Rectangle((xmin, ymin), xmax - xmin,
                                  ymax - ymin, fill=False,
-                                 edgecolor=colors[cls_id],
-                                 linewidth=linewidth)
+                                 edgecolor=color_id1, # colors[cls_id],
+                                 linewidth=linewidth)                          
             plt.gca().add_patch(rect)
             class_name = str(cls_id)
             plt.gca().text(xmin, ymin - 2,
                            '{:s} | {:.3f}'.format(class_name, score),
-                           bbox=dict(facecolor=colors[cls_id], alpha=0.5),
+                           bbox=dict(facecolor=color_id1, alpha=0.5),
                            fontsize=12, color='white')
+        # Groundtruth
+        for bgt_id in range(len(bbox_gt['xmin'])):
+            rect_gt = plt.Rectangle((bbox_gt['xmin'][bgt_id] , bbox_gt['ymin'][bgt_id]), 
+                                     bbox_gt['xmax'][bgt_id] - bbox_gt['xmin'][bgt_id],
+                                     bbox_gt['ymax'][bgt_id] - bbox_gt['ymin'][bgt_id], fill=False,
+                                     edgecolor='red',
+                                     linewidth=1.0) 
+            
+            plt.gca().add_patch(rect_gt)
+    plt.show()
+    
+        
+def plt_bboxes_gt(img, bbox_gt, figsize=(10,10), linewidth=2.0):
+    """Visualize bounding boxes. Largely inspired by SSD-MXNET!
+    """
+    color_id1='#13EAC9'
+    fig = plt.figure(figsize=figsize)
+    plt.axis('off')
+    
+    plt.imshow(img)
+    
+        # Groundtruth
+    for bgt_id in range(len(bbox_gt['xmin'])):
+        rect_gt = plt.Rectangle((bbox_gt['xmin'][bgt_id] , bbox_gt['ymin'][bgt_id]), 
+                                 bbox_gt['xmax'][bgt_id] - bbox_gt['xmin'][bgt_id],
+                                 bbox_gt['ymax'][bgt_id] - bbox_gt['ymin'][bgt_id], fill=False,
+                                 edgecolor='red',
+                                 linewidth=1.0) 
+            
+        plt.gca().add_patch(rect_gt)
     plt.show()
