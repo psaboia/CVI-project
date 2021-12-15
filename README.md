@@ -12,22 +12,15 @@ Priscila Moreira (pmoreira@nd.edu) and Mahsa Mitcheff (mmitchef@nd.edu)
 ### [Final Presentation](CV_presentation_final.pdf) 
 ### [Short video on SSD performance](forgery_detection_in_medical_images.mp4) 
 
-
-
 <a name="intructions-testSSD"></a>
 # Instructions to run our trained SSD model on test set images
 
 ## Set the envirement
 
 **1. Create a conda environment using the following command:**
-
-***Using GPU***
+**Note: only on GPU**
 ```
 conda create -n py368-tf115 python==3.6.8 tensorflow-gpu==1.15.0 cudatoolkit=10.0 
-```
-***Using CPU***
-```
-conda create -n py368-tf115 python==3.6.8 tensorflow==1.15.0  
 ```
 
 **2. Activate the created envirement**
@@ -51,14 +44,25 @@ conda install opencv
 pip3 install matplotlib==3.3.2
 ```
 
-## Download our repo 
-Download our repo, unzip it and download the demo folder inside it
+**5. Install jupyter notebbok to run the script**
+```
+conda install jupyter
+```
 
+## Download our repo and demo folder
 ```
 cd CVI-project
 wget http://www.crc.nd.edu/~pmoreira/CVI-project/demo.zip
 unzip demo.zip
 ```
+
+**Inside the demo folder you shoul see** 
+ 
+ - `ckeckpoints/`           - folder with graph and weights of the proposed model
+ - `test_sample`            - foler with some images from out testset (unseen data during the trainig)
+ - `test_solution.ipynb`    - the jupyter notebook for testing the trained model in some test set images.
+
+
 ## Run the code using jupyter notebook
 
 Inside the folder `./demo`, run the script `test_solution.ipynb`.
