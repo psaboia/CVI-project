@@ -54,6 +54,7 @@ pip3 install matplotlib==3.3.2
 ## Clone the repo
 ```
 git clone https://github.com/psaboia/CVI-project.git
+cd CVI-project
 ```
 ## Run the code using jupyter notebook
 
